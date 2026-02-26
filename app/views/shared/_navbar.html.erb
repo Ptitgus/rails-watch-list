@@ -1,0 +1,22 @@
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="https://static.vecteezy.com/system/resources/previews/016/733/452/non_2x/cinema-logo-vector.jpg">
+    </a>
+    <h2>My movies notebook</h2>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item-right">
+          <%= link_to "New list", new_list_path, class: "btn btn-primary mb-2" %>
+        </li>
+        <li class="nav-item active">
+          <%= link_to "Your lists", lists_path, class: "btn btn-primary mb-2" %>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

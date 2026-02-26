@@ -1,0 +1,15 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://neuvy-le-roi.fr/wp-content/uploads/2022/05/cinema.jpg);">
+  <div class="container text-center">
+    <h1>Add a comment for a movie</h1>
+  </div>
+</div>
+
+<div class="container mt-5">
+
+	<%= simple_form_for [@list, @bookmark] do |f| %>
+		<%= f.association :movie, collection: Movie.all %>
+    <%= f.input :comment %>
+		<%= f.button :submit, class: "btn btn-primary" %>
+	<% end %>
+
+</div>
