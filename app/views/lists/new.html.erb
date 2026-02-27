@@ -7,7 +7,7 @@
 <div class="container mt-5">
   <%= simple_form_for @list do |f| %>
     <%= f.input :name %>
-    <%= f.input :list_picture, label: "Url of your list's picture" %>
+    <%= f.input :photo, as: :file, label: "Load your list's picture" %>
     <%= f.button :submit, class: "btn btn-primary" %>
   <% end %>
 </div>

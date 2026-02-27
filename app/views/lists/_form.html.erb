@@ -1,5 +1,5 @@
 <%= simple_form_for @list do |f| %>
   <%= f.input :name %>
-  <%= f.input :list_picture, label: "Url of your picture" %>
+  <%= f.input :photo, as: :file, label: "Load your list's picture" %>
   <%= f.submit 'Add', class: 'btn btn-success mt-2' %>
 <% end %>
