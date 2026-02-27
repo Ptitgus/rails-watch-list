@@ -12,7 +12,6 @@ require 'json'
 require 'open-uri'
 
 puts 'Cleaning database...'
-Movie.destroy_all
 
 puts 'Creating movies...'
 
